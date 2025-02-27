@@ -52,6 +52,12 @@ Each example is located in its own component for easy reference.
 
 The project is deployed on GitHub Pages. You can view the live demo [here](https://choudharymahipal.github.io/GeneratePDF/).
 
+```bash
+npm install -g angular-cli-ghpages
+ng build --base-href "/GeneratePDF/"
+ngh --dir dist/generate-pdf/browser
+```
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
