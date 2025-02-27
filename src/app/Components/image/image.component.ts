@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import jsPDF from 'jspdf';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-image',
   templateUrl: './image.component.html',
-  styleUrl: './image.component.scss'
+  styleUrl: './image.component.scss',
 })
 export class ImageComponent {
-  generatePDF(){
+  baseurl = environment.baseURL;
+
+  generatePDF() {
     const doc = new jsPDF();
-    const imgData = '/assets/img/user.jpg'; // Replace with the path to your image in the assets folder
+    const imgData = this.baseurl + '/assets/img/user.jpg'; // Replace with the path to your image in the assets folder
     doc.addImage(imgData, 'JPEG', 10, 10, 180, 160);
     doc.save('image.pdf');
   }
