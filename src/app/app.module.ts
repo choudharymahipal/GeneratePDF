@@ -7,6 +7,8 @@ import { SampleComponent } from './Components/sample/sample.component';
 import { HomeComponent } from './home/home.component';
 import { ImageComponent } from './Components/image/image.component';
 import { HeaderComponent } from './Shared/Components/header/header.component';
+import { PageLayoutComponent } from './Components/page-layout/page-layout.component';
+import { TableComponent } from './Components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HeaderComponent } from './Shared/Components/header/header.component';
     SampleComponent,
     HomeComponent,
     ImageComponent,
-    HeaderComponent
+    HeaderComponent,
+    PageLayoutComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

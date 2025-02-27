@@ -10,16 +10,35 @@ export class SampleComponent {
   generatePDF(){
     const doc = new jsPDF();
     
-    //Add a title to the PDF
-    doc.setFont('times');
-    doc.setFontSize(22);
-    doc.text('This is a title', 20, 20);
-
-    //Add some content to the PDF
+    // Add text with bold font
+    doc.setFont('helvetica', 'bold');
     doc.setFontSize(16);
-    doc.text('This is a customized PDF document using jsPDF', 20, 30);
-    doc.text('TYou can add more content like image, tables and so on.', 20, 40);
+    doc.text('Angular PDF Generation with jsPDF', 20, 20);
 
+    // Add text with italic font
+    doc.setFontSize(12);
+    doc.setFont('times', 'italic');
+    doc.text('This is an example demonstrating text formatting in jsPDF.', 20, 30);
+
+    // Add colored text
+    doc.setTextColor(255, 0, 0);
+    doc.text('Colored Text Example', 20, 40);
+
+    // Add bold and italic text
+    doc.setFont('courier', 'bolditalic');
+    doc.setTextColor(0, 128, 0);
+    doc.text('Green Bold Italic Text', 20, 50);
+
+    // Add clickable link
+    doc.setFontSize(14);
+    doc.setFont('arial', 'bold');
+    doc.setTextColor(0, 0, 255);
+    doc.textWithLink('Clickable Link Example', 20, 60, { url: 'https://angular.io/' });
+
+    // draw a line
+    doc.setDrawColor(255, 165, 0);
+    doc.setLineWidth(1);
+    doc.line(20, 65, 180, 65);
 
     //Save the PDF
     doc.save('sample.pdf');
