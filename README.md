@@ -1,27 +1,61 @@
-# GeneratePDF
+# Generate PDF with jsPDF and Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+This project demonstrates how to generate PDF documents using the jsPDF library in an Angular application. It includes various examples and has been deployed on GitHub for easy access.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Code scaffolding
+## Introduction
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Generating PDF documents is a common requirement in many web applications. This project provides a comprehensive guide on how to use the jsPDF library with Angular to create PDF files. Each example is provided separately for clarity.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To get started, clone the repository and install the necessary dependencies:
 
-## Running unit tests
+```bash
+git clone https://github.com/choudharymahipal/GeneratePDF.git
+cd GeneratePDF
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+To run the application locally, use the following command:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng serve
+```
 
-## Further help
+Navigate to `http://localhost:4200/` in your web browser to see the application in action.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Examples
+
+The project includes several examples demonstrating different features of jsPDF with Angular:
+
+- Basic PDF generation
+- Adding text and images
+- Creating tables
+- Customizing styles
+- Change Page Layout etc.
+
+Each example is located in its own component for easy reference.
+
+## Deployment
+
+The project is deployed on GitHub Pages. You can view the live demo [here](https://choudharymahipal.github.io/GeneratePDF/).
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, please create an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
